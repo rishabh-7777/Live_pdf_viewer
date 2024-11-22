@@ -133,7 +133,7 @@
 // export default App;
 
 import React, { useState, useEffect } from 'react';
-import { FiZoomIn, FiZoomOut, FiFile } from "react-icons/fi";  // Added file icon for the button
+//import { FiZoomIn, FiZoomOut, FiFile } from "react-icons/fi";  // Added file icon for the button
 import { Document, Page } from 'react-pdf';
 import { io } from 'socket.io-client';
 import { pdfjs } from 'react-pdf';
@@ -244,20 +244,20 @@ function App() {
         </button>
 
         {/* Zoom In Button */}
-        <button
-          onClick={zoomIn}
-          className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 hover:shadow-[0px_0px_8px_2px_rgba(0,255,0,0.6)] transition-all duration-200"
-        >
-          <FiZoomIn />
-        </button>
+        // <button
+        //   onClick={zoomIn}
+        //   className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 hover:shadow-[0px_0px_8px_2px_rgba(0,255,0,0.6)] transition-all duration-200"
+        // >
+        //   // <FiZoomIn />
+        // </button>
 
-        {/* Zoom Out Button */}
-        <button
-          onClick={zoomOut}
-          className="px-6 py-3 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-blue-700 hover:shadow-[0px_0px_8px_2px_rgba(0,255,0,0.6)] transition-all duration-200"
-        >
-          <FiZoomOut />
-        </button>
+        // {/* Zoom Out Button */}
+        // <button
+        //   // onClick={zoomOut}
+        //   className="px-6 py-3 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-blue-700 hover:shadow-[0px_0px_8px_2px_rgba(0,255,0,0.6)] transition-all duration-200"
+        // >
+        //   <FiZoomOut />
+        // </button>
 
         <button
           onClick={() => goToPage(pageNumber + 1)}
